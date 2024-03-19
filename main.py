@@ -1,22 +1,17 @@
 #k-means algorithm / Anton Duris(184197)
-import copy
-import csv
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np 
-import matplotlib
 from tkinter import *
-#matplotlib.use("TkAgg")
+from tkinter import filedialog
+from tkinter import messagebox
+from tkinter import ttk
+
+import numpy as np
+import pandas as pd
+# matplotlib.use("TkAgg")
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.figure import Figure
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-import sklearn.datasets
-from sklearn.datasets import make_blobs
-from tkinter import filedialog
-from tkinter import ttk
-from tkinter import messagebox
 from numpy.random import choice
+from sklearn.datasets import make_blobs
+
 
 class GUI:
     def __init__(self,gui):
